@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Blog</title>
+    <style>
+        h1 {
+            background-color: rgb(3, 3, 82);
+            height:10vh;
+            font-family:"Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;height: 10vh;">Blog !</h1>
+
+    <section class="blogs-section"style="text-align:center;justify-content:center;display: flex;
+    align-items: center;width:100%">
+        <div class="blog-card"style=" box-sizing: border-box;
+        width: 50%;">
+            <img src="food-fruit-fruits-vegetables.jpg" class="blog-image" alt="">
+            <h3 class="blog-title">Welcome to Food Blog</h1>
+            <p class="blog-overview"style="display: flex;">I have to say, I enjoyed every single bite of the meal in (RN). I had a 3 course meal, with a couple of beers. Considering the quality, the price is reasonable...<span class="jiji">This is my absolute favorite restaurant in (CN). The food is always fantastic and no matter what I order I am always delighted with my meal</span></p>
+
+            <button onclick="toggleText()" class="btn dark">Read more</button>
+        </div>
+    </section>
+    <section class="blogs-section"style="text-align:center;justify-content:center;display: flex;
+    align-items: center;width:100%">
+        <div class="blog-card"style=" box-sizing: border-box;
+        width: 50%;">
+            <img src="    food-still-life-wooden-surface-brown-wallpaper.jpg" class="blog-image" alt="">
+            <h3 class="blog-title">Welcome to Food Blog</h1>
+            <p class="blog-overview"style="display: flex;">I have to say, I enjoyed every single bite of the meal in (RN). I had a 3 course meal, with a couple of beers. Considering the quality, the price is reasonable...<span class="jiji1">This is my absolute favorite restaurant in (CN). The food is always fantastic and no matter what I order I am always delighted with my meal</span></p>
+       
+            <button onclick="toggleText1()" class="btn dark"id ="kar">Read more</button>
+        </div>
+    </section>
+
+ 
+
+    <div class="container my-4"id="hi">
+    <div class="hii"></div>
+    <br>
+    
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Title</label>
+            <input type="text" class="form-control" id="title">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Sub-Title</label>
+            <input type="text" class="form-control" id="subtitle">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Description</label>
+            <textarea class="form-control" id="desc" rows="3"></textarea>
+        </div>
+        <button type="submit" id="click" class="btn btn-primary mb-2">Save</button>
+
+
+        <h2 align="middle">Saved items</h2>
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">INDEX</th>
+                    <th scope="col">TITLE</th>
+                    <th scope="col">SUBTITLE</th>
+                    <th scope="col">DESCRIPTION</th>
+                    <th scope="col"><button type="clear" onclick="clearedall()" class="btn  btn-primary btn-sm">Delete All</button></th>
+                </tr>
+            </thead>
+            <tbody id='table'>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Welcome to Food Blog</td>
+                    <td>BIT</td>
+                    <td>desc</td>
+                    <td><button type="submit" id="delete" class="btn btn-primary mb-2">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+
+    <script src="script1.js"></script>
+    
+
+
+</body>
+
+</html>
